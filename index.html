@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/b408879b64.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
@@ -32,7 +33,7 @@
       </a>
       <!--MENÚ HAMBURGUESA-->
       <button class="menu-toggle" aria-label="Abrir menú">
-        &#9776;
+        ☰
         <!--ÍCONO HAMBURGUESA-->
       </button>
 
@@ -83,13 +84,14 @@
               />
             </div>
             <div class="bloque-subcard2">
-              <button
-                href="registro-ruido"
-                class="botones-inicio"
-                type="submit"
-              >
-                IR
-              </button>
+              <a href="#registro-ruido">
+                <button
+                  class="botones-inicio"
+                  type="button"
+                >
+                  IR
+                </button>
+              </a>
             </div>
           </div>
           <div class="bloque-card">
@@ -372,6 +374,78 @@
     <!--REGISTRO-RUIDO-->
     <section id="registro-ruido" class="registro-ruido">
       <p class="titulo-registro-ruido">REGISTRO DE RUIDO</p>
+      <div class="registro-ruido-contenido">
+        <div class="registro-ruido-nuevo">
+          <p><strong>Medición nuevo ruido:</strong></p>
+          <div class="registro-ruido-form">
+            <label><strong>Su ubicación en el mapa es:</strong></label>
+            <div class="mapa-preview">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.014007229079!2d-122.4194156!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085806c3d64a001%3A0xa3b2b8648c8b4f8f!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1622500800000!5m2!1sen!2sus"
+                width="100%"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <label>Tipo de ruido:</label>
+            <select class="input-registro">
+              <option value="">Seleccione un tipo</option>
+              <option value="continuo">Continuo</option>
+              <option value="intermitente">Intermitente</option>
+              <option value="impulsivo">Impulsivo</option>
+              <option value="baja-frecuencia">Baja Frecuencia</option>
+            </select>
+            <label class="label-mapa-sub">Franja Horaria:</label>
+            <select class="select-mapa">
+              <option>Seleccione una opción</option>
+              <option>00:00 - 04:00 hrs</option>
+              <option>04:01 - 08:00 hrs</option>
+              <option>08:01 - 12:00 hrs</option>
+              <option>12:01 - 16:00 hrs</option>
+              <option>16:01 - 20:00 hrs</option>
+              <option>20:01 - 24:00 hrs</option>
+            </select>
+            <p>Nota: Acceso a su micrófono</p>
+            <button class="boton-medir" type="submit">Medir</button>
+          </div>
+        </div>
+        <div class="registro-ruido-historico">
+          <p><strong>Historial de ruidos:</strong></p>
+          <div class="historico-filtros">
+            <label>Distrito:</label>
+            <select class="input-registro">
+              <option value="">Seleccione un distrito...</option>
+              <option value="san-miguel">San Miguel</option>
+              <option value="miraflores">Miraflores</option>
+              <option value="los-olivos">Los Olivos</option>
+              <option value="san-martin-porres">San Martín de Porres</option>
+              <option value="san-isidro">San Isidro</option>
+              <option value="ate">Ate</option>
+              <option value="comas">Comas</option>
+            </select>
+            <label>Del:</label>
+            <input class="input-registro" type="date" />
+            <label>Al:</label>
+            <input class="input-registro" type="date" />
+          </div>
+          <div class="historico-lista">
+            <div class="historico-item">
+              <p>Fecha: 10/03/25</p>
+              <p>Intensidad: 50 dB</p>
+              <p>Lugar: San Miguel</p>
+            </div>
+            <div class="historico-item">
+              <p>Fecha: 11/04/25</p>
+              <p>Intensidad: 67 dB</p>
+              <p>Lugar: San Miguel</p>
+            </div>
+          </div>
+          <button class="boton-exportar" type="submit">Exportar datos</button>
+          <button class="boton-ver-mas" type="submit">Ver más</button>
+        </div>
+      </div>
     </section>
     <section id="portal-informativo" class="portal-informativo"></section>
     <section id="mis-reportes" class="mis-reportes"></section>
