@@ -49,3 +49,25 @@
 .button-planes:hover {
   background-color: #f5b31b;
 }
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+  .planes-contenido {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
+  }
+
+  .planes-subcard1 {
+    font-size: 1.5rem;
+  }
+
+  .planes-subcard2 {
+    font-size: 1.2rem;
+  }
+
+  .titulo-planes {
+    font-size: 2rem;
+  }
+}
