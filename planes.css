@@ -1,0 +1,51 @@
+.titulo-planes {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.planes-contenido {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  gap: 2rem;
+}
+
+.planes-cards {
+  text-align: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 2rem;
+  flex: 1;
+}
+
+.planes-subcard1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.planes-subcard2 {
+  font-size: 2rem;
+}
+
+.planes-subcard3 {
+  padding-bottom: 1rem;
+}
+
+.button-planes {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffd166;
+  border: none;
+  cursor: pointer;
+}
+
+.button-planes:hover {
+  background-color: #f5b31b;
+}

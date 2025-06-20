@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #52b788;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.app {
+  padding: 6rem 2rem 3rem;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.app-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+.app-description p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+  position:fixed;
+}
+
+.app-images img {
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+.app-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-download p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.app-platforms {
+  display: flex;
+  gap: 1rem;
+}
+
+.app-platforms img {
+  margin: 0.5rem;
+}
+
+.app-download-button {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ffd166;
+  color: #333333;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.app-download-button:hover {
+  background-color: #f1b322;
+}
