@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="perfil.css" />
     <link rel="stylesheet" href="mapa.css" />
     <link rel="stylesheet" href="planes.css" />
+    <link rel="stylesheet" href="nosotros.css" />
     <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="registro-ruido.css" />
   </head>
   <body>
     <!--MENÚ SUPERIOR-->
@@ -29,7 +32,7 @@
       </a>
       <!--MENÚ HAMBURGUESA-->
       <button class="menu-toggle" aria-label="Abrir menú">
-        ☰
+        &#9776;
         <!--ÍCONO HAMBURGUESA-->
       </button>
 
@@ -80,7 +83,13 @@
               />
             </div>
             <div class="bloque-subcard2">
-              <button class="botones-inicio" type="submit">IR</button>
+              <button
+                href="registro-ruido"
+                class="botones-inicio"
+                type="submit"
+              >
+                IR
+              </button>
             </div>
           </div>
           <div class="bloque-card">
@@ -94,7 +103,13 @@
               />
             </div>
             <div class="bloque-subcard2">
-              <button class="botones-inicio" type="submit">IR</button>
+              <button
+                href="portal-informativo"
+                class="botones-inicio"
+                type="submit"
+              >
+                IR
+              </button>
             </div>
           </div>
           <div class="bloque-card">
@@ -108,7 +123,9 @@
               />
             </div>
             <div class="bloque-subcard2">
-              <button class="botones-inicio" type="submit">IR</button>
+              <button href="mis-reportes" class="botones-inicio" type="submit">
+                IR
+              </button>
             </div>
           </div>
         </div>
@@ -130,7 +147,7 @@
           </button>
         </div>
 
-        <form class="formulario-contacto">
+        <form class="formulario-perfil">
           <div class="form-grupo">
             <label class="label-perfil" for="">Nombre:</label>
             <input class="input-perfil" type="text" />
@@ -244,7 +261,7 @@
             <p>Premium</p>
           </div>
           <div class="planes-subcard2">
-            <p>
+            <p class="planes-subcard2-texto">
               Todo lo del plan Free, mas alertas personalizas, historial
               detallado y exportación de datos.
             </p>
@@ -272,58 +289,91 @@
       </div>
     </section>
     <!--NOSOTROS-->
-    <section id="Nosotros" class="nosotros"></section>
+    <section id="Nosotros" class="nosotros">
+      <p class="titulo-nosotros">NOSOTROS</p>
+      <div class="nosotros-contenido">
+        <img
+          width="550"
+          height="400"
+          src="imagenes/nosotros-imagen.png"
+          alt=""
+        />
+        <div class="nosotros-parrafos">
+          <p class="mision-vision">
+            <strong>Misión: </strong>"Empoderar a las comunidades urbanas
+            mediante una aplicación innovadora que mide y visualiza la
+            contaminación acústica, promoviendo entornos más saludables con
+            datos accesibles y colaborativos." <br />
+            <br />
+            <strong>Visión: </strong>"Convertirnos en el referente global en el
+            monitoreo ciudadanos de ruido, inspirando ciudades sostenibles y
+            conscientes del impacto sonoro para 2030."
+          </p>
+        </div>
+      </div>
+    </section>
     <!--APP-->
     <section id="App" class="app">
-      <div class="app-container">
-        <h2 class="app-title">NUESTRA APP</h2>
-        <div class="app-content">
-          <div class="app-description">
-            <p>Presentamos la app móvil de UrbaNoise, más funcionalidades que en la web</p>
-          </div>
-          <div class="app-images">
-            <img
-              width="200"
-              height="400"
-              src="imagenes/mobile_preview1.png"
-              alt="App Login"
-            />
-            <img
-              width="200"
-              height="400"
-              src="imagenes/mobile_preview2.png"
-              alt="App Map"
-            />
-          </div>
-          <div class="app-download">
-            <p>Descarga la app escaneando este QR:</p>
-            <img
-              width="150"
-              height="150"
-              src="imagenes/qr_app.png"
-              alt="QR Code"
-            />
-            <p>Disponible en las plataformas:</p>
-            <div class="app-platforms">
-              <img
-                width="30"
-                height="30"
-                src="imagenes/apple_logo.png"
-                alt="Apple"
-              />
-              <img
-                width="30"
-                height="30"
-                src="imagenes/android_logo.png"
-                alt="Android"
-              />
-            </div>
-            <button class="app-download-button">Descargar</button>
-          </div>
+      <p class="titulo-app">NUESTRA APP</p>
+      <div class="app-contenido">
+        <div class="app-bloque1">
+          <p>
+            Presentamos la app móvil de UrbaNoise, más funcionalidades que en la
+            web
+          </p>
+          <img
+            class="imagen-app"
+            width="450"
+            height="400"
+            src="imagenes/app-imagen.png"
+            alt=""
+          />
+        </div>
+        <div class="app-bloque2">
+          <p>Descarga la app escaneando este QR:</p>
+          <img width="200" height="200" src="imagenes/QR-imagen.png" alt="" />
+          <p>Disponible en las plataformas:</p>
+          <img
+            class="imagen-logos"
+            width="150"
+            height="100"
+            src="imagenes/logos-apps.png"
+            alt=""
+          />
+          <button class="button-descargar-app" type="submit">Descargar</button>
         </div>
       </div>
     </section>
     <!--CONTACTO-->
-    <section id="Contacto" class="contacto"></section>
+    <section id="Contacto" class="contacto">
+      <p class="titulo-contacto">CONTÁCTANOS</p>
+      <div class="contacto-contenido">
+        <form class="formulario-contacto">
+          <div class="form-grupo">
+            <label class="label-perfil" for="">Nombre y apellido:</label>
+            <input class="input-perfil" type="text" />
+          </div>
+          <div class="form-grupo">
+            <label class="label-perfil" for="">Correo:</label>
+            <input class="input-perfil" type="text" />
+          </div>
+          <div class="form-grupo">
+            <label class="label-perfil" for="">Teléfono:</label>
+            <input class="input-perfil" type="tel" />
+          </div>
+          <div class="form-grupo">
+            <label class="label-perfil" for="asunto">Mensaje:</label>
+            <textarea class="input-perfil" rows="3"></textarea>
+          </div>
+          <button class="boton-enviar-contacto" type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+    <!--REGISTRO-RUIDO-->
+    <section id="registro-ruido" class="registro-ruido">
+      <p class="titulo-registro-ruido">REGISTRO DE RUIDO</p>
+    </section>
+    <section id="portal-informativo" class="portal-informativo"></section>
+    <section id="mis-reportes" class="mis-reportes"></section>
   </body>
 </html>
