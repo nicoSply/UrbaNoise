@@ -1,0 +1,115 @@
+.titulo-app {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.app {
+  padding-bottom: 3rem;
+}
+
+.app-contenido {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+.app-bloque1 {
+  flex: 1;
+  text-align: center;
+}
+
+.app-bloque2 {
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagen-app {
+  border-radius: 0.5rem;
+}
+
+.imagen-logos {
+  padding-bottom: 3rem;
+}
+
+.button-descargar-app {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffd166;
+}
+
+.button-descargar-app:hover {
+  background-color: #f5b31b;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .titulo-app {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .app-contenido {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .app-bloque1,
+  .app-bloque2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .app-bloque1 p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .imagen-app {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .app-bloque2 img[width="200"] {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+  }
+
+  .imagen-logos {
+    width: 120px;
+    height: auto;
+    margin: 15px 0;
+  }
+
+  .button-descargar-app {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .app-bloque2 p {
+    font-size: 0.95rem;
+    margin: 10px 0;
+  }
+}

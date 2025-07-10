@@ -1,0 +1,321 @@
+.registro-ruido {
+  margin-bottom: 2rem;
+}
+
+.titulo-registro-ruido {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.registro-ruido-contenido {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mnr {
+  font-size: 2rem;
+}
+
+.registro-ruido-nuevo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.registro-ruido-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-registro {
+  padding: 0.5rem;
+  width: 462px;
+}
+
+.label-ruido1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 9.9rem;
+}
+
+.label-ruido2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 9.7rem;
+}
+
+.label-ruido3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 14.75rem;
+}
+
+.selects-ruido {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.mapa-preview {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.boton-medir {
+  cursor: pointer;
+  background-color: #ffd166;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 0.5rem;
+  width: 200px;
+}
+
+.boton-medir:hover {
+  background-color: #f1b322;
+}
+
+.btn-mdr {
+  text-align: center;
+}
+
+.registro-ruido-historico {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.historico-filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: cornflowerblue;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.fechas-filtro1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.fechas-filtro2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.label-distrito {
+  margin-right: 1.2rem;
+}
+
+.button-buscar-registro {
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.label-del {
+  margin-right: 3rem;
+}
+
+.label-al {
+  margin-right: 2rem;
+  margin-left: 2.5rem;
+}
+
+.input-fechas {
+  padding: 0.5rem;
+  width: 200px;
+}
+
+.historico-item {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  border-bottom: 3px solid #9d9d9d;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: white;
+}
+
+.historico-subitem {
+  flex: 1;
+}
+
+.div-btn-details {
+  flex: 0.2;
+  align-items: center;
+  display: flex;
+}
+
+.btn-details {
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-details:hover {
+  background-color: #dedede;
+}
+
+.fa-solid-details {
+  font-size: 25px;
+}
+
+.div-btn-ver-mas {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.boton-ver-mas {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 18.8rem;
+  padding-right: 18.8rem;
+}
+
+.btn-export {
+  text-align: center;
+}
+
+.boton-exportar {
+  cursor: pointer;
+  background-color: #ffd166;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 0.5rem;
+  width: 655px;
+}
+
+.boton-exportar:hover {
+  background-color: #f1b322;
+}
+
+@media (max-width: 768px) {
+  .registro-ruido {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .titulo-registro-ruido {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .registro-ruido-contenido {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .registro-ruido-nuevo,
+  .registro-ruido-historico {
+    width: 100%;
+  }
+
+  .mnr {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .mapa-preview iframe {
+    height: 180px;
+    margin-bottom: 15px;
+  }
+
+  .selects-ruido,
+  .fechas-filtros1,
+  .fechas-filtros2 {
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .input-registro,
+  .input-fechas {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 5px;
+    padding: 8px;
+  }
+
+  .historico-filtros {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .button-buscar-registro {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .historico-item {
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .historico-subitem {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .div-btn-details {
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .btn-mdr,
+  .div-btn-ver-mas,
+  .btn-export {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .boton-medir,
+  .boton-ver-mas,
+  .boton-exportar {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .label-ruido1,
+  .label-ruido2,
+  .label-ruido3,
+  .label-distrito,
+  .label-del,
+  .label-al {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+}

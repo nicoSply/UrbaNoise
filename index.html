@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <script
+      src="https://kit.fontawesome.com/b408879b64.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="inicio.css" />
+    <link rel="stylesheet" href="perfil.css" />
+    <link rel="stylesheet" href="mapa.css" />
+    <link rel="stylesheet" href="planes.css" />
+    <link rel="stylesheet" href="nosotros.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="registro-ruido.css" />
+    <link rel="stylesheet" href="portal.css" />
+    <link rel="stylesheet" href="mis-reportes.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <!--MENÚ SUPERIOR-->
+    <nav class="top-header">
+      <!--LOGO-->
+      <a href="#" class="logo">
+        <img height="60" width="120" src="imagenes/urbanoise-logo.png" alt="" />
+      </a>
+      <!--MENÚ HAMBURGUESA-->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!--ÍCONO HAMBURGUESA-->
+      </button>
+
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <ul class="menu-horizontal">
+        <li><a href="#Inicio" class="section-link">Inicio</a></li>
+        <li><a href="#Mapa" class="section-link">Mapa</a></li>
+        <li><a href="#Planes" class="section-link">Planes</a></li>
+        <li><a href="#Nosotros" class="section-link">Nosotros</a></li>
+        <li><a href="#App" class="section-link">App</a></li>
+        <li><a href="#Contacto" class="section-link">Contacto</a></li>
+        <li>
+          <a><img height="30" width="30" src="imagenes/perfil.png" alt="" /></a>
+          <ul class="menu-vertical">
+            <li><a href="#Perfil" class="section-link">Perfil</a></li>
+            <li><a>Cerrar Sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!--INICIO-->
+    <section id="Inicio" class="inicio">
+      <div class="inicio_contenido">
+        <div class="inicio-bloque1">
+          <h2>URBANOISE</h2>
+          <img
+            width="300"
+            height="300"
+            src="imagenes/imagen-riesgo-sonido.png"
+            alt=""
+          />
+          <p>
+            "UrbaNoise convierte tu smartphone en un sonómetro para medir y
+            visualizar ruido en tiempo real. Con un mapa colaborativo,
+            identifica zonas criticas y genera informes para mejores informes
+            urbanos"
+          </p>
+        </div>
+        <div class="inicio-bloque2">
+          <div class="bloque-card">
+            <div class="bloque-subcard1">
+              <h3>Medición/Historial de Ruido</h3>
+              <img
+                width="250"
+                height="150"
+                src="imagenes/medicion-ruido.png"
+                alt=""
+              />
+            </div>
+            <div class="bloque-subcard2">
+              <a href="#registro-ruido" class="botones-inicio">IR</a>
+            </div>
+          </div>
+          <div class="bloque-card">
+            <div class="bloque-subcard1">
+              <h3>Portal Informativo</h3>
+              <img
+                width="250"
+                height="150"
+                src="imagenes/portal-informativo1.png"
+                alt=""
+              />
+            </div>
+            <div class="bloque-subcard2">
+              <a href="#portal-informativo" class="botones-inicio">IR</a>
+            </div>
+          </div>
+          <div class="bloque-card">
+            <div class="bloque-subcard1">
+              <h3>Mis Reportes</h3>
+              <img
+                width="250"
+                height="150"
+                src="imagenes/mis-reportes.png"
+                alt=""
+              />
+            </div>
+            <div class="bloque-subcard2">
+              <a href="#mis-reportes" class="botones-inicio">IR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PERFIL-->
+    <section id="Perfil" class="perfil">
+      <p class="titulo-perfil">PERFIL</p>
+      <div class="perfil-contenido">
+        <div class="perfil-bloque1">
+          <img
+            width="200"
+            height="200"
+            src="imagenes/cambio-perfil.png"
+            alt=""
+          />
+          <button class="boton-modificar-foto" type="submit">
+            Modificar foto
+          </button>
+        </div>
+
+        <form class="formulario-perfil" name="frmp">
+          <div class="form-grupo">
+            <label class="label-perfil" for="">Nombre:</label>
+            <input class="input-perfil" type="text" name="nombrep" />
+          </div>
+          <div class="form-grupo">
+            <label class="label-perfil" for="">Nombre de Usuario:</label>
+            <input class="input-perfil" type="text" name="nombreu" />
+          </div>
+          <div class="form-grupo">
+            <label class="label-perfil" for="">Ubicación:</label>
+            <input class="input-perfil" type="text" name="ubicacion" />
+          </div>
+          <div class="form-grupo">
+            <label class="label-perfil" for="">Correo:</label>
+            <input class="input-perfil" type="text" name="emailp" />
+          </div>
+          <div class="form-grupo-notificacion">
+            <label class="label-perfil" for="">Activar notificaciones:</label>
+            <input type="checkbox" />
+          </div>
+          <button class="boton-guardar-cambios" type="submit">
+            Guardar Cambios
+          </button>
+        </form>
+      </div>
+    </section>
+    <!--MAPA-->
+    <section id="Mapa" class="mapa">
+      <p class="titulo-mapa">MAPA</p>
+      <div class="mapa-contenido">
+        <div class="mapa-bloque1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.014007229079!2d-122.4194156!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085806c3d64a001%3A0xa3b2b8648c8b4f8f!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1622500800000!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="mapa-bloque2">
+          <div class="mapa-bloque2-cards">
+            <div class="mapa-bloque2-subcards">
+              <label class="label-mapa">Buscar:</label>
+            </div>
+            <div class="mapa-bloque2-subcards2">
+              <input class="input-mapa" type="text" placeholder="Buscar..." />
+              <button class="buttom-buscar-mapa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+          <div class="mapa-bloque2-cards">
+            <label class="label-mapa">Filtros:</label>
+            <label class="label-mapa-sub">dB:</label>
+            <select class="select-mapa">
+              <option>Seleccione una opción</option>
+              <option>0 - 20 dB</option>
+              <option>21 - 40 dB</option>
+              <option>41 - 70 dB</option>
+              <option>71 - 100 dB</option>
+              <option>más de 100 dB</option>
+            </select>
+            <label class="label-mapa-sub">Tipo de Ruido:</label>
+            <select class="select-mapa">
+              <option>Seleccione una opción</option>
+              <option>Continuo</option>
+              <option>Intermitente</option>
+              <option>Impulsivo</option>
+              <option>Baja Frecuencia</option>
+            </select>
+            <label class="label-mapa-sub">Franja Horaria:</label>
+            <select class="select-mapa">
+              <option>Seleccione una opción</option>
+              <option>00:00 - 04:00 hrs</option>
+              <option>04:01 - 08:00 hrs</option>
+              <option>08:01 - 12:00 hrs</option>
+              <option>12:01 - 16:00 hrs</option>
+              <option>16:01 - 20:00 hrs</option>
+              <option>20:01 - 24:00 hrs</option>
+            </select>
+            <div class="button-filtros">
+              <button class="button-aplicar-filtros" type="submit">
+                Aplicar Filtros
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PLANES-->
+    <section id="Planes" class="planes">
+      <p class="titulo-planes">PLANES</p>
+      <div class="planes-contenido">
+        <div class="planes-cards">
+          <div class="planes-subcard1">
+            <p>Free</p>
+          </div>
+          <div class="planes-subcard2">
+            <p>
+              Acceso básico para medir y visualizar ruido en tiempo real.
+              Incluye mapas colaborativos y reportes simples.
+            </p>
+          </div>
+          <div class="planes-subcard3">
+            <button class="button-planes">0$</button>
+          </div>
+        </div>
+        <div class="planes-cards">
+          <div class="planes-subcard1">
+            <p>Premium</p>
+          </div>
+          <div class="planes-subcard2">
+            <p class="planes-subcard2-texto">
+              Todo lo del plan Free, mas alertas personalizas, historial
+              detallado y exportación de datos.
+            </p>
+          </div>
+          <div class="planes-subcard3">
+            <div class="planes-subcard3">
+              <button class="button-planes">9.99$</button>
+            </div>
+          </div>
+        </div>
+        <div class="planes-cards">
+          <div class="planes-subcard1">
+            <p>VIP</p>
+          </div>
+          <div class="planes-subcard2">
+            <p>
+              Todo lo del plan Premium, mas acceso a nuevas versiones de la app,
+              todo de manera anticipada e inmediata.
+            </p>
+          </div>
+          <div class="planes-subcard3">
+            <button class="button-planes">14.99$</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--NOSOTROS-->
+    <section id="Nosotros" class="nosotros">
+      <p class="titulo-nosotros">NOSOTROS</p>
+      <div class="nosotros-contenido">
+        <img
+          width="550"
+          height="400"
+          src="imagenes/nosotros-imagen.png"
+          alt=""
+        />
+        <div class="nosotros-parrafos">
+          <p class="mision-vision">
+            <strong>Misión: </strong>"Empoderar a las comunidades urbanas
+            mediante una aplicación innovadora que mide y visualiza la
+            contaminación acústica, promoviendo entornos más saludables con
+            datos accesibles y colaborativos." <br />
+            <br />
+            <strong>Visión: </strong>"Convertirnos en el referente global en el
+            monitoreo ciudadanos de ruido, inspirando ciudades sostenibles y
+            conscientes del impacto sonoro para 2030."
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--APP-->
+    <section id="App" class="app">
+      <p class="titulo-app">NUESTRA APP</p>
+      <div class="app-contenido">
+        <div class="app-bloque1">
+          <p>
+            Presentamos la app móvil de UrbaNoise, más funcionalidades que en la
+            web
+          </p>
+          <img
+            class="imagen-app"
+            width="450"
+            height="400"
+            src="imagenes/app-imagen.png"
+            alt=""
+          />
+        </div>
+        <div class="app-bloque2">
+          <p>Descarga la app escaneando este QR:</p>
+          <img width="200" height="200" src="imagenes/QR-imagen.png" alt="" />
+          <p>Disponible en las plataformas:</p>
+          <img
+            class="imagen-logos"
+            width="150"
+            height="100"
+            src="imagenes/logos-apps.png"
+            alt=""
+          />
+          <button class="button-descargar-app" type="submit">Descargar</button>
+        </div>
+      </div>
+    </section>
+    <!--CONTACTO-->
+    <section id="Contacto" class="contacto">
+      <p class="titulo-contacto">CONTÁCTANOS</p>
+      <div class="contacto-contenido">
+        <form class="formulario-contacto" name="frm">
+          <div class="form-grupo-contacto">
+            <label class="label-contacto" for="">Nombre:</label>
+            <input class="input-contacto" type="text" name="nombre" />
+          </div>
+          <div class="form-grupo-contacto">
+            <label class="label-contacto" for="">Apellido:</label>
+            <input class="input-contacto" type="text" name="apellido" />
+          </div>
+          <div class="form-grupo-contacto">
+            <label class="label-contacto" for="">Correo:</label>
+            <input class="input-contacto" type="text" name="email" />
+          </div>
+          <div class="form-grupo-contacto">
+            <label class="label-contacto" for="">Teléfono:</label>
+            <input class="input-contacto" type="tel" name="telefono" />
+          </div>
+          <div class="form-grupo-contacto">
+            <label class="label-contacto" for="asunto">Mensaje:</label>
+            <textarea class="input-contacto" rows="3" name="mensaje"></textarea>
+          </div>
+          <button class="boton-enviar-contacto" type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+    <!--REGISTRO-RUIDO-->
+    <section id="registro-ruido" class="registro-ruido">
+      <p class="titulo-registro-ruido">REGISTRO DE RUIDO</p>
+      <div class="registro-ruido-contenido">
+        <div class="registro-ruido-nuevo">
+          <p class="mnr"><strong>Medición nuevo ruido:</strong></p>
+          <div class="registro-ruido-form">
+            <label><strong>Su ubicación en el mapa es:</strong></label>
+            <div class="mapa-preview">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.014007229079!2d-122.4194156!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085806c3d64a001%3A0xa3b2b8648c8b4f8f!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1622500800000!5m2!1sen!2sus"
+                width="100%"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="selects-ruido">
+              <label class="label-ruido1">Tipo de ruido:</label>
+              <select class="input-registro">
+                <option value="">Seleccione un tipo</option>
+                <option value="continuo">Continuo</option>
+                <option value="intermitente">Intermitente</option>
+                <option value="impulsivo">Impulsivo</option>
+                <option value="baja-frecuencia">Baja Frecuencia</option>
+              </select>
+            </div>
+            <div class="selects-ruido">
+              <label class="label-ruido2">Franja Horaria:</label>
+              <select class="input-registro">
+                <option>Seleccione una opción</option>
+                <option>00:00 - 04:00 hrs</option>
+                <option>04:01 - 08:00 hrs</option>
+                <option>08:01 - 12:00 hrs</option>
+                <option>12:01 - 16:00 hrs</option>
+                <option>16:01 - 20:00 hrs</option>
+                <option>20:01 - 24:00 hrs</option>
+              </select>
+            </div>
+            <div class="selects-ruido">
+              <label class="label-ruido3">dB:</label>
+              <select class="input-registro">
+                <option>Seleccione una opción</option>
+                <option>0 - 20 dB</option>
+                <option>21 - 40 dB</option>
+                <option>41 - 70 dB</option>
+                <option>71 - 100 dB</option>
+                <option>más de 100 dB</option>
+              </select>
+            </div>
+            <p>Nota: Acceso a su micrófono</p>
+            <div class="btn-mdr">
+              <button class="boton-medir" type="submit">Medir</button>
+            </div>
+          </div>
+        </div>
+        <div class="registro-ruido-historico">
+          <p class="mnr"><strong>Historial de ruidos:</strong></p>
+          <div class="historico-filtros">
+            <div class="fechas-filtros1">
+              <label class="label-distrito">Distrito:</label>
+              <select class="input-registro">
+                <option value="">Seleccione un distrito...</option>
+                <option value="san-miguel">San Miguel</option>
+                <option value="miraflores">Miraflores</option>
+                <option value="los-olivos">Los Olivos</option>
+                <option value="san-martin-porres">San Martín de Porres</option>
+                <option value="san-isidro">San Isidro</option>
+                <option value="ate">Ate</option>
+                <option value="comas">Comas</option>
+              </select>
+              <button class="button-buscar-registro">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="fechas-filtros2">
+              <label class="label-del">Del:</label>
+              <input class="input-fechas" type="date" />
+              <label class="label-al">Al:</label>
+              <input class="input-fechas" type="date" />
+            </div>
+          </div>
+          <div class="historico-lista">
+            <div class="historico-item">
+              <div class="historico-subitem">
+                <p>Fecha:</p>
+                <p>Intensidad:</p>
+                <p>Lugar:</p>
+              </div>
+              <div class="historico-subitem">
+                <p>10/03/25</p>
+                <p>50 dB</p>
+                <p>San Miguel</p>
+              </div>
+              <div class="div-btn-details">
+                <button class="btn-details">
+                  <i class="fa-solid fa-circle-info fa-solid-details"></i>
+                </button>
+              </div>
+            </div>
+            <div class="historico-item">
+              <div class="historico-subitem">
+                <p>Fecha:</p>
+                <p>Intensidad:</p>
+                <p>Lugar:</p>
+              </div>
+              <div class="historico-subitem">
+                <p>11/04/25</p>
+                <p>67 dB</p>
+                <p>San Miguel</p>
+              </div>
+              <div class="div-btn-details">
+                <button class="btn-details">
+                  <i class="fa-solid fa-circle-info fa-solid-details"></i>
+                </button>
+              </div>
+            </div>
+            <div class="div-btn-ver-mas">
+              <button class="boton-ver-mas" type="submit">Ver más</button>
+            </div>
+          </div>
+          <div class="btn-export">
+            <button class="boton-exportar" type="submit">Exportar datos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PORTAL-INFORMATIVO-->
+    <section id="portal-informativo" class="portal-informativo">
+      <p class="titulo-portal-informativo">PORTAL INFORMATIVO</p>
+      <div class="portal-contenedor">
+        <p class="portal-articulos">Articulos informativos:</p>
+        <div class="portal-elemento">
+          <div class="portal-item1">
+            <p>
+              "Guía básica para entender los decibelios: Niveles de ruido y sus
+              efectos en la vida diaria"
+            </p>
+          </div>
+          <div class="portal-item2">
+            <img height="200px" src="imagenes/portal1.png" alt="" />
+          </div>
+          <div class="portal-item3">
+            <button class="btn-flecha-portal">
+              <i class="fa-solid fa-arrow-right fa-solid-flecha"></i>
+            </button>
+          </div>
+        </div>
+        <div class="portal-elemento">
+          <div class="portal-item1">
+            <p>
+              "El impacto oculto del ruido urbano en tu salud física y mental:
+              Una guía completa"
+            </p>
+          </div>
+          <div class="portal-item2">
+            <img height="200px" src="imagenes/portal2.png" alt="" />
+          </div>
+          <div class="portal-item3">
+            <button class="btn-flecha-portal">
+              <i class="fa-solid fa-arrow-right fa-solid-flecha"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--MIS-REPORTES-->
+    <section id="mis-reportes" class="mis-reportes">
+      <p class="titulo-mis-reportes">MIS REPORTES</p>
+      <div class="mis-reportes-contenedor">
+        <div class="mis-reportes-filtros">
+          <div class="mis-reportes-fechas-filtros1">
+            <label class="label-distrito">Ubicación:</label>
+            <select class="mis-reportes-input-registro">
+              <option value="">Seleccione un distrito...</option>
+              <option value="san-miguel">San Miguel</option>
+              <option value="miraflores">Miraflores</option>
+              <option value="los-olivos">Los Olivos</option>
+              <option value="san-martin-porres">San Martín de Porres</option>
+              <option value="san-isidro">San Isidro</option>
+              <option value="ate">Ate</option>
+              <option value="comas">Comas</option>
+            </select>
+            <button class="button-buscar-registro">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="mis-reportes-fechas-filtros2">
+            <div class="mis-reportes-fechas-filtros2-item1">
+              <label class="label-del">Del:</label>
+              <input class="mis-reportes-input-fechas" type="date" />
+            </div>
+            <div class="mis-reportes-fechas-filtros2-item2">
+              <label class="label-al">Al:</label>
+              <input class="mis-reportes-input-fechas" type="date" />
+            </div>
+          </div>
+        </div>
+        <div class="historico-lista">
+          <div class="historico-item">
+            <div class="historico-subitem">
+              <p>Fecha:</p>
+              <p>Intensidad:</p>
+              <p>Lugar:</p>
+            </div>
+            <div class="historico-subitem">
+              <p>10/03/25</p>
+              <p>50 dB</p>
+              <p>San Miguel</p>
+            </div>
+            <div class="div-btn-details">
+              <button class="btn-details">
+                <i class="fa-solid fa-circle-info fa-solid-details"></i>
+              </button>
+            </div>
+          </div>
+          <div class="historico-item">
+            <div class="historico-subitem">
+              <p>Fecha:</p>
+              <p>Intensidad:</p>
+              <p>Lugar:</p>
+            </div>
+            <div class="historico-subitem">
+              <p>11/02/25</p>
+              <p>67 dB</p>
+              <p>San Miguel</p>
+            </div>
+            <div class="div-btn-details">
+              <button class="btn-details">
+                <i class="fa-solid fa-circle-info fa-solid-details"></i>
+              </button>
+            </div>
+          </div>
+          <div class="historico-item">
+            <div class="historico-subitem">
+              <p>Fecha:</p>
+              <p>Intensidad:</p>
+              <p>Lugar:</p>
+            </div>
+            <div class="historico-subitem">
+              <p>02/01/25</p>
+              <p>40 dB</p>
+              <p>San Miguel</p>
+            </div>
+            <div class="div-btn-details">
+              <button class="btn-details">
+                <i class="fa-solid fa-circle-info fa-solid-details"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="div-exportar-datos-mis-reportes">
+          <button class="button-exportar-datos-mis-reportes">
+            Exportar Datos
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--PIE DE PAGINA-->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="imagenes/urbanoise-logo.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>URBANOISE</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="documentos/politica-de-privacidad-de-datos.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="documentos/Terminos-y-condiciones.pdf"
+              >Términos y Condiciones</a
+            >
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="documentos/proteccion_de_datos.pdf">Protección de Datos</a>
+          </div>
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="imagenes/instagram.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="https://x.com/"
+              ><img
+                src="imagenes/twitter.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+            <a href="https://www.youtube.com/"
+              ><img
+                src="imagenes/youtube.png"
+                alt="YouTube"
+                class="social-icon"
+            /></a>
+            <a href="https://web.telegram.org"
+              ><img
+                src="imagenes/telegram.png"
+                alt="Telegram"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="menu-hamburguesa.js"></script>
+    <script src="contacto.js"></script>
+    <script src="perfil.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+/*
+ * ESTILOS PARA EL FOOTER DE LA PÁGINA
+ * Diseño responsive con 3 columnas que se apilan en móviles
+ */
+
+/* ------------------------- */
+/* ESTILOS GENERALES DEL FOOTER */
+/* ------------------------- */
+.footer {
+  background-color: #222; /* Fondo oscuro para mejor contraste */
+  color: white; /* Texto blanco */
+  padding: 2rem 1rem; /* Espaciado interno: 2rem vertical, 1rem horizontal */
+  font-family: "Roboto", sans-serif; /* Fuente tipográfica */
+}
+
+/* ------------------------- */
+/* CONTENEDOR PRINCIPAL */
+/* ------------------------- */
+.footer-container {
+  display: flex; /* Layout flexible */
+  flex-direction: row; /* Disposición en fila */
+  justify-content: space-between; /* Espaciado uniforme entre columnas */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: auto; /* Centrado horizontal */
+  gap: 2rem; /* Espacio entre columnas */
+}
+
+/* ------------------------- */
+/* COLUMNA DE MARCA/LOGO */
+/* ------------------------- */
+.footer-brand {
+  flex: 1; /* Ocupa espacio disponible */
+  min-width: 200px; /* Ancho mínimo antes de envolver */
+}
+
+/* Estilos para el logo */
+.footer-logo {
+  width: 60px; /* Ancho fijo */
+  height: auto; /* Altura proporcional */
+  margin-bottom: 0.5rem; /* Espacio inferior */
+}
+
+/* ------------------------- */
+/* COLUMNA DE ENLACES LEGALES */
+/* ------------------------- */
+.footer-links {
+  flex: 1; /* Ocupa espacio disponible */
+  min-width: 200px; /* Ancho mínimo antes de envolver */
+}
+
+/* Estilos para los enlaces */
+.footer-links a {
+  display: block; /* Mostrar como bloque (uno debajo de otro) */
+  color: #ccc; /* Color gris claro */
+  text-decoration: none; /* Sin subrayado */
+  margin: 0.3rem 0; /* Margen vertical entre enlaces */
+}
+
+/* Efecto hover en enlaces */
+.footer-links a:hover {
+  color: #fff; /* Color blanco al pasar el mouse */
+}
+
+/* ------------------------- */
+/* COLUMNA DE REDES SOCIALES */
+/* ------------------------- */
+.footer-social {
+  flex: 1; /* Ocupa espacio disponible */
+  min-width: 200px; /* Ancho mínimo antes de envolver */
+}
+
+/* Estilos para los iconos sociales */
+.social-icon {
+  width: 32px; /* Ancho fijo */
+  height: 32px; /* Altura fija */
+  margin-right: 0.5rem; /* Espacio a la derecha */
+  transition: transform 0.2s ease-in-out; /* Transición suave para efectos */
+}
+
+/* Efecto hover en iconos */
+.social-icon:hover {
+  transform: scale(1.2); /* Ligero aumento de tamaño */
+}
+
+/* ------------------------- */
+/* DISEÑO RESPONSIVE (MÓVILES) */
+/* ------------------------- */
+@media (max-width: 768px) {
+  /* Cambia a disposición vertical */
+  .footer-container {
+    flex-direction: column; /* Apila las columnas */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Alineación de texto centrada */
+  }
+
+  /* Ajuste para iconos sociales */
+  .footer-social img {
+    margin-bottom: 0.5rem; /* Espacio inferior entre iconos */
+  }
+}
