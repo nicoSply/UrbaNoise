@@ -28,6 +28,12 @@
 
 .planes-subcard2 {
   font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.planes-subcard2-texto {
+  padding-bottom: 2.7rem;
 }
 
 .planes-subcard3 {
@@ -43,6 +49,7 @@
   font-weight: bold;
   background-color: #ffd166;
   border: none;
+  border-radius: 1rem;
   cursor: pointer;
 }
 
@@ -50,24 +57,52 @@
   background-color: #f5b31b;
 }
 
-/* Media Query para móviles */
 @media (max-width: 768px) {
-  .planes-contenido {
-    flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    gap: 1rem;
-  }
-
-  .planes-subcard1 {
-    font-size: 1.5rem;
-  }
-
-  .planes-subcard2 {
-    font-size: 1.2rem;
+  .planes {
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
   .titulo-planes {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .planes-contenido {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .planes-cards {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 15px;
+  }
+
+  .planes-subcard1 p {
+    font-size: 1.3rem;
+    padding: 10px 0;
+  }
+
+  .planes-subcard2 {
+    padding: 0 15px;
+  }
+
+  .planes-subcard2 p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .button-planes {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .planes-subcard3 {
+    padding: 0 15px 15px;
   }
 }

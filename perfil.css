@@ -9,7 +9,7 @@
   flex-direction: row;
   gap: 2rem;
   align-items: center;
-  width: 100%;
+  widht: 100%;
   padding-bottom: 3rem;
 }
 
@@ -37,7 +37,11 @@
   border-radius: 0.5rem;
 }
 
-.formulario-contacto {
+.boton-modificar-foto:hover {
+  background-color: #f1b322;
+}
+
+.formulario-perfil {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -81,28 +85,42 @@
   width: 425px;
 }
 
-/* Media Query para móviles */
+.boton-guardar-cambios:hover {
+  background-color: #f1b322;
+}
+
 @media (max-width: 768px) {
-  .perfil-contenido {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .form-grupo .input-perfil {
-    width: 100%;
-  }
-
-  .boton-guardar-cambios {
-    width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .label-perfil {
-    font-size: 1.2rem;
+  .perfil {
+    padding: 20px 15px;
+    box-sizing: border-box;
   }
 
   .titulo-perfil {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .perfil-bloque1 img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .boton-modificar-foto,
+  .boton-guardar-cambios {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    width: auto;
+  }
+
+  .form-grupo {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .input-perfil {
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
   }
 }

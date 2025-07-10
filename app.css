@@ -52,34 +52,3 @@
 .button-descargar-app:hover {
   background-color: #f5b31b;
 }
-
-  /* Media Query para móviles */
-@media (max-width: 768px) {
-  .app-content {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .app-title {
-    font-size: 2rem;
-  }
-
-  .app-description p {
-    font-size: 1.2rem;
-    max-width: 100%;
-  }
-
-  .app-images {
-    width: 150px;
-    height: 350px;
-  }
-
-  .app-download p {
-    font-size: 1.2rem;
-  }
-
-  .app-download-button {
-    padding: 0.5rem 2rem;
-    font-size: 1.2rem;
-  }
-}

@@ -1,75 +1,82 @@
 body {
-  margin: 0;
-  padding: 0.5rem;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  margin: 0; /* Elimina el margen exterior del navegador */
+  padding: 0.5rem;  Espaciado interno general */
+  box-sizing: border-box; /* Incluye padding y border en los tamaños */
+  font-family: 'Segoe UI', sans-serif /* Fuente base legible y moderna */
 }
 
 /* CABECERA Y MENÚ SUPERIOR */
 .top-header {
-  position: fixed;
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  z-index: 100;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.5rem;
+  position: fixed; /* Mantiene el menú fijo en la parte superior */
+  background-color: rgb(255, 255, 255); /* Fondo blanco para visibilidad */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 100; /* Se asegura de estar por encima de otros elementos */
+  height: 5rem; /* Altura fija del menú (80px aprox.) */
+  display: flex; /* Activa Flexbox para alinear los elementos internos */
+  align-items: center; /* Centrado vertical */
+  justify-content: space-between; /* Separación entre logo y menú */
+  padding: 0 1.5rem; /* Espacio horizontal interno del menú */
 }
 
 /* LOGO */
 .logo img {
-  height: 3rem;
-  width: auto;
+  height: 3rem; /* Altura del logo */
+  width: auto; /* Mantiene proporción automática */
 }
 
 /* BOTÓN HAMBURGUESA (ESCONDE EN DESKTOP) */
 .menu-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-right: 1rem;
+  display: none; /* Oculto por defecto */
+  font-size: 2rem;  /*Tamaño del ícono hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Manito al pasar el mouse */
+  margin-right: 1rem; /* Espacio entre el borde derecho */
 }
 
 /* MENÚ PRINCIPAL HORIZONTAL */
 .menu-horizontal {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
+  list-style: none; /* Quita los bullets */
+  display: flex; /* Muestra en fila horizontal */
+  justify-content: space-around; /* Espaciado uniforme entre elementos */
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
+.menu-horizontal > li:last-child {
+  position: relative;
+}
+
 /* ENLACES DEL MENÚ */
 .menu-horizontal li a {
-  display: block;
-  padding: 1rem 1.25rem;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+  display: block; /* Permite aplicar padding y área clickeable completa */
+  padding: 1rem 1.25rem; /* Espaciado vertical y horizontal */
+  color: rgb(0, 0, 0); /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
   font-weight: bold;
 }
 
 .menu-horizontal li a:hover {
-  color: red;
+  color: red; /* Cambio de color al pasar el mouse */
 }
 
 /* SUBMENÚ VERTICAL OCULTO POR DEFECTO */
 .menu-vertical {
-  display: none;
-  position: absolute;
-  background-color: rgb(255, 255, 255);
+  display: none; /* Oculto por defecto */
+  position: absolute; /* Posición relativa al padre */
+  background-color: rgb(255, 255, 255); /* Fondo visible */
   list-style: none;
-  width: 12rem;
+  width: 100px;
   padding: 0;
   margin: 0;
+  width: 12rem; /* Ancho del submenú */
+  left: 0; /* Posición a la izquierda */
+  transform: translateX(-40%); /* Ajuste fino para alineación */
 }
 
 .menu-horizontal li:hover .menu-vertical {
-  display: block;
+  display: block; /* Se muestra al pasar el mouse */
 }
 
 .menu-vertical li a {
@@ -80,57 +87,39 @@ body {
 }
 
 .menu-vertical li a:hover {
-  background-color: #eee;
+  background-color: #eee; /* Resalta al pasar el mouse */
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* Media Query para móviles (ancho menor a 768px) */
+/* RESPONSIVE: MÓVILES */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Muestra el botón hamburguesa en móviles */
+    display: block; /* Mostrar botón hamburguesa en móviles */
   }
 
   .menu-horizontal {
-    display: none; /* Oculta el menú horizontal en móviles */
-    flex-direction: column;
-    position: absolute;
-    top: 5rem;
-    left: 0;
+    display: none; /* Ocultar menú horizontal por defecto */
+    flex-direction: column; /* Mostrarlo en vertical al activarse */
     width: 100%;
-    background-color: #ffffff;
+    background-color: white;
+    position: absolute;
+    top: 5rem; /* Debajo del menú fijo */
+    left: 0;
   }
 
   .menu-horizontal.active {
-    display: flex; /* Muestra el menú cuando se active */
+    display: flex; /* Mostrar menú al activar la clase */
   }
 
   .menu-horizontal li {
-    text-align: center;
-    width: 100%;
-  }
-
-  .menu-horizontal li a {
-    padding: 1rem;
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
   }
 
   .menu-vertical {
-    position: static;
-    width: 100%;
-    display: none;
+    left: auto;  
+    transform: translateX(0%);
   }
 
-  .menu-horizontal li:hover .menu-vertical {
-    display: none; /* Desactiva el hover en móviles */
-  }
-
-  .top-header {
-    padding: 0 1rem;
-  }
-
-  .logo img {
-    height: 2.5rem;
+  .menu-horizontal > li:last-child {
+    position: static; 
   }
 }

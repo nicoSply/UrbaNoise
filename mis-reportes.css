@@ -1,0 +1,168 @@
+.mis-reportes {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.titulo-mis-reportes {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.mis-reportes-contenedor {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+}
+
+.mis-reportes-filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: cornflowerblue;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mis-reportes-fechas-filtro1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.mis-reportes-fechas-filtro2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.mis-reportes-input-registro {
+  padding: 0.5rem;
+  width: 1284px;
+}
+
+.mis-reportes-input-fechas {
+  padding: 0.5rem;
+  width: 550px;
+}
+
+.mis-reportes-fechas-filtros2 {
+  display: flex;
+  flex-direction: row;
+  gap: 8.9rem;
+}
+
+.div-exportar-datos-mis-reportes {
+  text-align: right;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.button-exportar-datos-mis-reportes {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border: none;
+  background-color: #ffd166;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-exportar-datos-mis-reportes:hover {
+  background-color: #f1b322;
+}
+
+@media (max-width: 768px) {
+  .mis-reportes {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .titulo-mis-reportes {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .mis-reportes-contenedor {
+    width: 100%;
+  }
+
+  .mis-reportes-filtros {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mis-reportes-fechas-filtros1 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mis-reportes-fechas-filtros2 {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .mis-reportes-fechas-filtros2-item1,
+  .mis-reportes-fechas-filtros2-item2 {
+    width: 100%;
+  }
+
+  .mis-reportes-input-registro,
+  .mis-reportes-input-fechas {
+    width: 100% !important;
+    margin: 5px 0 10px 0 !important;
+    padding: 8px;
+  }
+
+  .button-buscar-registro {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .historico-item {
+    flex-direction: row;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .historico-subitem {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .historico-subitem p {
+    font-size: 0.95rem;
+  }
+
+  .div-btn-details {
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .div-exportar-datos-mis-reportes {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .button-exportar-datos-mis-reportes {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .label-distrito,
+  .label-del,
+  .label-al {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+}
